@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1>Morningscore</h1>
+      <h1>Morningscore test 2</h1>
     </>
   )
 }
