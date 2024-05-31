@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  color: #563ac9;
 
   &-logo img {
-    height: 40px;
+    height: 24px;
+    align-self: center;
   }
 
   &-menu {
@@ -15,7 +16,7 @@
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: white;
+    color: #2F2077;
     cursor: pointer;
 
     &:focus {
@@ -28,8 +29,10 @@
     gap: 20px;
 
     a {
-      color: white;
+      color: #2F2077;
       text-decoration: none;
+      font-weight: 600;
+      align-self: center;
 
       &:hover {
         text-decoration: underline;
@@ -43,8 +46,8 @@
       top: 50px;
       left: 0;
       width: 100%;
-      background-color: #333;
-      padding: 20px;
+      background-color: #ffffff;
+      padding: 20px 0px;
       gap: 10px;
 
       a, .navbar-buttons .btn {
@@ -57,19 +60,7 @@
 
   &-buttons {
     display: flex;
-    gap: 10px;
-
-    .btn {
-      padding: 8px 16px;
-      background-color: #555;
-      color: white;
-      border: none;
-      cursor: pointer;
-
-      &:hover {
-        background-color: #777;
-      }
-    }
+    gap: 10px
   }
 
   @media (max-width: 768px) {
@@ -88,5 +79,6 @@
     .navbar-buttons {
       display: none;
     }
+
   }
 }

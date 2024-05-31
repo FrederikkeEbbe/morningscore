@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../navbar.scss'; 
+import '../../public/logo-horizontal.svg'
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="/path/to/logo.png" alt="Logo" />
+        <img src="logo-horizontal.svg" alt="Logo" />
       </div>
       <button className="navbar-menu" onClick={toggleMenu}>
         ☰
@@ -22,11 +23,11 @@ const Navbar = () => {
         <a href="#priser">Priser</a>
         <a href="#omos">Om os</a>
         <a href="#preview">Preview</a>
-        <div className="navbar-buttons">
-          <button className="btn">Login</button>
-          <button className="btn">Gratis prøve</button>
-        </div>
       </div>
+      <div className="navbar-buttons">
+          <button className="button-thick-outline">Login</button>
+          <button className="button-thick-primary">Gratis prøve</button>
+        </div>
     </nav>
   );
 }

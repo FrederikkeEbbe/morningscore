@@ -16,7 +16,6 @@ const LandingPage = () => {
         </div>
       </section>
       <section className="showreel-section">
-        <h2>Showreel</h2>
         <video controls>
           <source src="/path/to/your/showreel.mp4" type="video/mp4" />
           Your browser does not support the video tag.
